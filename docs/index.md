@@ -1,143 +1,107 @@
-# Welcome to StackEdit!
+## 1.0 Inbound
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by openenter code hereing the **file explorer** on the left corner of the navigation bar.
+![](file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
 
+Figure 1 Inbound Page.
 
-# Files
+## 1.1 Prerequisite
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+Integration to a platform is a must before accessing 1.0 Inbound and 2.0 Outbound Please refer to [5.0 Integration](#_5.0_Integrations).
 
-## Create files and folders
+## 1.2 Functionalities
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+Inbound panel refers to a panel to process incoming messages from clients. The processes include:
 
-## Switch to another file
+### 1.2.1 Receiving messages.
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+![](file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image003.png)
 
-## Rename a file
+Figure 2 Inbound - Incoming Messages
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+This list box contains all the incoming messages. Each item in the list includes clients’ profile picture, status, phone number, preview of the message, the platform of the incoming message and the time of the message.
 
-## Delete a file
+To understand Status:
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+<table style=";">
+    <tbody>
+        <tr>
+            <td style="background-color:#BFBFBF;border:1.0pt solid windowtext;padding:0cm 5.4pt;vertical-align:top;width:66.8pt;">Status</td>
+            <td style="background-color:#BFBFBF;border-bottom-style:solid;border-color:windowtext;border-left-style:none;border-right-style:solid;border-top-style:solid;border-width:1.0pt;padding:0cm 5.4pt;vertical-align:top;width:366.0pt;">Meaning</td>
+        </tr>
+        <tr>
+            <td style="border-bottom-style:solid;border-color:windowtext;border-left-style:solid;border-right-style:solid;border-top-style:none;border-width:1.0pt;padding:0cm 5.4pt;width:66.8pt;"><img src="file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image004.png"></td>
+            <td style="border-bottom:1.0pt solid windowtext;border-left-style:none;border-right:1.0pt solid windowtext;border-top-style:none;padding:0cm 5.4pt;vertical-align:top;width:366.0pt;">
+                <p>&nbsp;</p>
+                <p>The client does not respond more than 24 hours.</p>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom-style:solid;border-color:windowtext;border-left-style:solid;border-right-style:solid;border-top-style:none;border-width:1.0pt;padding:0cm 5.4pt;width:66.8pt;"><img src="file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image005.png"></td>
+            <td style="border-bottom:1.0pt solid windowtext;border-left-style:none;border-right:1.0pt solid windowtext;border-top-style:none;padding:0cm 5.4pt;vertical-align:top;width:366.0pt;">
+                <p>&nbsp;</p>
+                <p>The client does not respond in between 16 hours and 24 hours.</p>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom-style:solid;border-color:windowtext;border-left-style:solid;border-right-style:solid;border-top-style:none;border-width:1.0pt;padding:0cm 5.4pt;width:66.8pt;"><img src="file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image006.png"></td>
+            <td style="border-bottom:1.0pt solid windowtext;border-left-style:none;border-right:1.0pt solid windowtext;border-top-style:none;padding:0cm 5.4pt;vertical-align:top;width:366.0pt;">
+                <p>&nbsp;</p>
+                <p>The client does not respond in between 1 hours and 16 hours.</p>
+                <p>&nbsp;</p>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-bottom-style:solid;border-color:windowtext;border-left-style:solid;border-right-style:solid;border-top-style:none;border-width:1.0pt;padding:0cm 5.4pt;vertical-align:top;width:66.8pt;">
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </td>
+            <td style="border-bottom:1.0pt solid windowtext;border-left-style:none;border-right:1.0pt solid windowtext;border-top-style:none;padding:0cm 5.4pt;vertical-align:top;width:366.0pt;">
+                <p>&nbsp;</p>
+                <p>The client does not respond within 1 hour.</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
 
-## Export a file
+_**Additional Information**_
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
+_If the status of a client is expired \[no response more than 24 hours\]. A warning will be popped to inform that “the conversation has been expired”. No message can be sent out as the messaging function is disabled to avoid any accidental sending._
 
+Figure 3 Inbound - Expired Conversation Demo
 
-# Synchronization
-
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## Open a file
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-## Save a file
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## Synchronize a file
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-## Manage file synchronization
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-
-# Publication
-
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
-
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
-
-## Publish a File
-
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
-
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
-
-## Update a publication
-
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
-
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
-
-## Manage file publication
-
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+To understand Platform, please refer to [5.0 Integrations](#_5.0_Integrations).
 
 
-# Markdown extensions
+ 
 
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+Apart from the above, a Search bar is provided for filtering messages quickly. If you have any desired message which you want to access, please enter the conversation content into the search bar.
 
-> **ProTip:** You can disable any **Markdown extension** in the **File properties** dialog.
+Figure 4 Inbound - Search bar
 
+### 1.2.2 Replying messages to clients.
 
-## SmartyPants
+1. Customised Replies
 
-SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
+![](file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image018.png)
 
-|                |ASCII                          |HTML                         |
-|----------------|-------------------------------|-----------------------------|
-|Single backticks|`'Isn't this fun?'`            |'Isn't this fun?'            |
-|Quotes          |`"Isn't this fun?"`            |"Isn't this fun?"            |
-|Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
+Figure 5 Inbound - Conversation Bar Demonstration
 
-
-## KaTeX
-
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
+This works similarly to any chat application in the market. There are no extra notes here.
 
 
-## UML diagrams
+ 
 
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
+1. Templated Replies
 
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
+![](file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image022.png)
 
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
+Figure 6 Inbound - Calling Template Tab
 
-And this will produce a flow chart:
+To call out the template tab, type “/” in the conversation bar. Then, the template tab will be automatically called out.  In the template tab, you need to select one account and one of the template (Refers to [2.0 Outbound](#_2.0_Outbound)) names throughout a list, as shown in Figure 7.
 
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
+![](file:////Users/amirul/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image024.png)
+
+Figure 7 Inbound - Template List
