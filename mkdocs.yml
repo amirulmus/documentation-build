@@ -10,8 +10,7 @@ pages:
     - Inbound: "index.md"
     - About: "about.md"
 
-theme: cosmo
-# theme_dir: "custom"
+theme_dir: "custom"
 
 shortcuts:
     help: 72 # h (help)
@@ -21,11 +20,5 @@ shortcuts:
 
 markdown_extensions:
     - admonition
-
-extra:
-    generator: false
-
-hide:
-    - footer
 
 copyright: © Copyright 2023, Nubitel.
