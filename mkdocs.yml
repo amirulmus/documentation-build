@@ -1,0 +1,28 @@
+site_name: Omnichannel Nubitel
+site_description: Documentation Omnichannel.
+site_author: Amirul M
+site_favicon: favicon.ico
+
+plugins:
+    - search
+
+nav:
+    - Index: index.md
+    - About: about.md
+
+theme:
+    name: readthedocs
+    custom_dir: custom/
+    colorscheme: github
+    highlightjs: true
+
+shortcuts:
+    help: 72 # h (help)
+    next: 83 # s (suivant)
+    previous: 80 # p (précédent)
+    search: 82 # r (rechercher)
+
+markdown_extensions:
+    - admonition
+
+copyright: © Copyright 2023, Nubitel.
