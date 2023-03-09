@@ -10,8 +10,6 @@ pages:
     - Inbound: "index.md"
     - About: "about.md"
 
-theme_dir: "custom"
-
 shortcuts:
     help: 72 # h (help)
     next: 83 # s (suivant)
