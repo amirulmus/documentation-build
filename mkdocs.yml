@@ -25,4 +25,7 @@ shortcuts:
 markdown_extensions:
     - admonition
 
+extra:
+    generator: false
+
 copyright: © Copyright 2023, Nubitel.
