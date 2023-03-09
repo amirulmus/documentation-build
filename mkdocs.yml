@@ -5,10 +5,10 @@ site_favicon: favicon.ico
 
 plugins:
     - search
-
-nav:
-    - Inbound: index.md
-    - About: about.md
+    
+pages:
+    - Inbound: 'index.md'
+    - About: 'about.md'
 
 theme:
     name: readthedocs
