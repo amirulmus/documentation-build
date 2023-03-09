@@ -192,10 +192,7 @@
         </footer>
 
       {%- block scripts %}
-        <script>
-            var base_url =  base_url | tojson ,
-                shortcuts =  config.theme.shortcuts | tojson ;
-        </script>
+   
         <script src="{{ 'js/base.js'|url }}" defer></script>
         {%- for path in extra_javascript %}
         <script src="{{ path }}" defer></script>
