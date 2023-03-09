@@ -5,16 +5,12 @@ site_favicon: favicon.ico
 
 plugins:
     - search
-    
-pages:
-    - Inbound: 'index.md'
-    - About: 'about.md'
 
-theme:
-    name: readthedocs
-    custom_dir: custom/
-    colorscheme: github
-    highlightjs: true
+pages:
+    - Inbound: "index.md"
+    - About: "about.md"
+
+theme_dir: "custom"
 
 shortcuts:
     help: 72 # h (help)
@@ -27,7 +23,7 @@ markdown_extensions:
 
 extra:
     generator: false
-    
+
 hide:
     - footer
 
