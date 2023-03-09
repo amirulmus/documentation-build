@@ -10,6 +10,12 @@ pages:
     - Inbound: "index.md"
     - About: "about.md"
 
+theme:
+    name: readthedocs
+    custom_dir: custom/
+    colorscheme: github
+    highlightjs: true
+
 shortcuts:
     help: 72 # h (help)
     next: 83 # s (suivant)
