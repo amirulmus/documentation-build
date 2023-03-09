@@ -7,7 +7,7 @@ plugins:
     - search
 
 nav:
-    - Inbound: inbound.md
+    - Inbound: index.md
     - About: about.md
 
 theme:
